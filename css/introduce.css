@@ -1,0 +1,103 @@
+@font-face {
+  font-family: 'Pretendard-Regular';
+  src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff')
+    format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+.introduce {
+  width: 100vw;
+  height: 60vh;
+  font-family: 'Pretendard-Regular';
+}
+
+.iam {
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  height: 60px;
+  margin: 80px auto;
+  justify-content: space-between;
+}
+
+.name {
+  width: 300px;
+  font-size: 50px;
+  padding-top: 8px;
+  color: var(--color-blue04);
+}
+
+.mySelf {
+  width: 50%;
+  border-left: 3px solid #e0e0e0;
+  font-size: 16px;
+  align-items: center;
+  padding-left: 14px;
+  justify-content: center;
+  line-height: 30px;
+}
+
+.record {
+  width: 100%;
+  max-width: 1200px;
+  border-bottom: 2px solid #e0e0e0;
+  padding-bottom: 100px;
+  margin: 0 auto;
+  height: 160px;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.home {
+  width: 40%;
+  margin: 0 auto;
+  text-align: center;
+  justify-content: space-between;
+}
+
+.home > h3 {
+  font-size: 20px;
+  margin: 15px 0px;
+  color: var(--color-blue04);
+}
+.iamImg {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto;
+}
+
+.iamImg > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+@media screen and (max-width: 768px) {
+  .iam {
+    flex-direction: column;
+  }
+  .name {
+    margin: 0 auto;
+    text-align: center;
+  }
+  .mySelf {
+    width: 80%;
+    text-align: center;
+    font-size: 15px;
+    border: none;
+    padding: 12px;
+    margin: 0 auto;
+  }
+  .record {
+    padding-top: 30px;
+    padding-bottom: 50px;
+  }
+  .home > h3 {
+    font-size: 15px;
+  }
+  .home > span {
+    font-size: 12px;
+  }
+}
